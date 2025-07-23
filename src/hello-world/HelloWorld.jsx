@@ -4,7 +4,7 @@ function HelloWorldTittle({props = 'Default value'}) {
     // const style = { color: 'red' , backgroundColor: 'black' };
     return (
         <div>
-            <h1 className="flex font-black bg-black">{props.toUpperCase()}</h1>
+            <h1 className="flex bg-black text-white">{props.toUpperCase()}</h1>
         </div>
     )
 }
@@ -21,7 +21,7 @@ function HelloWorldParagraph() {
 function HelloWorld() {
     return (
         <div>
-            <HelloWorldTittle />
+            <HelloWorldTittle props="halo"/>
             <HelloWorldParagraph />
         </div>
     )
